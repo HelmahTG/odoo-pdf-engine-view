@@ -1,11 +1,10 @@
 {
     "name": "PDF Engine for Odoo",
     "summary": "A custom PDF Engine for handling large drawing files in Odoo",
-    "description": "handeling large drawing files in odoo",
+    "description": """Handling large drawing files in Odoo. 
         This module integrates a custom PDF Engine into Odoo, allowing users to upload 
         and review large PDF drawings efficiently. Optimized for architecture and 
-        engineering firms working with large blueprint PDFs.
-    """,
+        engineering firms working with large blueprint PDFs.""",
     "author": "Helmah",
     "website": "https://rayka-soft.com/",
     "category": "Tools",
