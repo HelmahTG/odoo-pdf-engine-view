@@ -1,0 +1,30 @@
+<odoo>
+    <record id="view_pdf_engine_form" model="ir.ui.engine">
+        <field name="name">pdf.engine.form</field>
+        <field name="model">pdf.engine</field>
+        <field name="arch" type="xml">
+            <form string="PDF Engine">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="pdf_file"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_pdf_engine_tree" model="ir.ui.engine">
+        <field name="name">pdf.engine.tree</field>
+        <field name="model">pdf.engine</field>
+        <field name="arch" type="xml">
+            <tree string="PDF Engine">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <menuitem id="menu_pdf_engine_root" name="PDF Engine" sequence="10"/>
+    
+    <menuitem id="menu_pdf_engine_main" parent="menu_pdf_engine_root" name="Manage PDFs" action="action_pdf_engine"/>
+</odoo>
